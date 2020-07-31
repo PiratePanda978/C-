@@ -1,0 +1,17 @@
+.table th{
+    background-color:black;
+    color:white;
+}
+.table tr:nth-child(odd){
+    background-color: rgb(130, 128, 133);
+}
+body{
+    height:100vh;
+}
+table{
+    height:100%;
+    width:100%;
+    font-family: 'Courier New',sans-serif;
+    font-size:0.875rem;
+    font-weight:bold;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q5</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin:0;
+        }
+        #container{
+            background:url("egypt.jpg") no-repeat;
+            background-size:100% 100%;
+            width:100%;  
+            height:800px;
+        }
+        #brand{
+            display:inline-block;
+        }
+        #quote{
+            margin-top:200px;
+            margin-left:100px;
+        }
+        #emp3{
+            font-size:75px;
+        }
+        #emp1{
+            font-size:30px;
+        }
+        #emp2{
+            font-size:35px;
+        }
+        fieldset{
+            display:inline-block;
+            text-align: center;
+        }
+        #submit{
+            margin-left:225px;
+            margin-top:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1 id="brand">Egyptian Airlines</h1>
+        <div id="quote">
+            <p><span id="emp1">WHERE</span><br><span id="emp2">DO YOU WANT TO</span><br><span id="emp3">EXPLORE</span></p>
+        </div>
+        <form action="#">
+            <fieldset>
+                <legend>
+                    Choose Trip
+                </legend>
+                <label for="Trip">
+                </label>
+                <input type="radio" name="Trip">
+                <label for="">Round Trip</label>
+                <input type="radio" name="Trip">
+                <label for="">One Way</label>
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Choose Date
+                </legend>
+                <label for="date"></label>
+                <input type="date" name="date">
+            </fieldset>
+            <fieldset>
+                <legend>
+                    Choose Destination
+                </legend>
+                <select name="desti" id="desti">
+                    <option value="">Australia</option>
+                    <option value="">USA</option>
+                    <option value="">India</option>
+                    <option value="">Britain</option>
+                    <option value="">China</option>
+                </select>
+            </fieldset><br>
+            <input type="submit" formmethod="POST" value="Book Your Flight" id="submit">
+        </form>
+    </div>
+</body>
+</html>

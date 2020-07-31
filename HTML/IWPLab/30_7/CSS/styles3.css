@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+}
+li{
+    margin-left:auto;
+    margin-right:auto;
+    width:7rem;
+}
+body{
+    background-color: #f3ecc2;
+}
+.ingredients,.recipe{
+    margin-top:2rem;
+}
+.recipe>p{
+    padding:2% 3% 0 3%;
+    font-style: italic;
+}
+h1{
+    font-family:'Pacifico', sans-serif;
+}
+.dairy{
+    background-color:#f9d56e
+}
+.meat{
+    background-color:#e8505b;
+}
+.vegetable{
+    background-color: #14b1ab;
+}
