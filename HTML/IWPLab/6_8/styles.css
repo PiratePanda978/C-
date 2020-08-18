@@ -1,0 +1,41 @@
+table,td{
+    border:1px solid black;
+    font-family: Arial;
+    font-size:12px;
+    font-size-adjust:0.5;
+}
+body{
+    margin:30px;
+}
+table{
+    height:50vh;
+}
+td{
+    text-align:center;
+    padding:20px;
+}
+.row1,.row4{
+    background-color:grey;
+}
+.row4{
+    text-transform: capitalize;
+}
+.row1:hover{
+    background-color:blue;
+}
+a:link{
+    color:red;
+}
+a:visited{
+    color:green;
+}
+a:hover{
+    color:maroon;
+}
+img{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+}
