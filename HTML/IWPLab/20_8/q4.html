@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8 />
+<title>Compute the average marks and grade</title>
+<script>
+    var i;
+    var students = [];
+    var n = prompt("Enter the lenght of the array: ");
+    for(i=0;i<n;i++){
+        var arr = [];
+        var name = prompt("Enter the name :");
+        arr[0] = name;
+        var marks = prompt("Enter the marks: ");
+        arr[1] = marks;
+        students[i] = arr;
+    }
+    var Avgmarks = 0;
+    var avg1 = 0;
+
+    for (i=0; i < students.length; i++) {
+        Avgmarks += students[i][1];
+        var avg = (Avgmarks/students.length);
+    }
+    document.write("<ul>");
+    for(i = 0;i<students.length;i++){
+        avg1 = students[i][1];
+        if (avg1 < 60){
+            document.write("<li>" + students[i][0] + " has Grade : F</li>");      
+        } 
+        else if (avg1 < 70) {
+            document.write("<li>" + students[i][0] + " has Grade : D</li>"); 
+        } 
+        else if (avg1 < 80) {
+            document.write("<li>" + students[i][0] + " has Grade : C</li>"); 
+        } else if (avg < 90) {
+            document.write("<li>" + students[i][0] + " has Grade : B</li>"); 
+        } else if (avg1 < 100) {
+            document.write("<li>" + students[i][0] + " has Grade : A</li>"); 
+        }
+    }
+    document.write("</ul>");
+</script>
+</head>
+<body>
+  
+</body>
+</html>

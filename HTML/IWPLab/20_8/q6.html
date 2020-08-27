@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>q6</title>
+    <script>
+        var n,i,ind,value;
+        ind = 0;
+        n = prompt("Enter the size of array.\n");
+        var arr = [];
+        for(i=0;i<n;i++){
+            arr[i] = prompt("Enter element: ");
+        }
+        document.write("<h1> The array elements are </h1>");
+        document.write("<ol>")
+        for(i=0;i<n;i++){
+            document.write("<li> "+arr[i]+"</li>");
+        }
+        document.write("</ol>");
+        var min = Math.abs(arr[0]-arr[1]);
+        for(i=0;i<n-1;i++){
+            value = Math.abs(arr[i]-arr[i+1]);
+            if(value < min){
+                min = value;
+                ind = i;
+            }
+        }
+        document.write("<h2> The index of the element is " + ind + "</h2>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

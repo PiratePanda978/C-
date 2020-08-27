@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<head>
+<script type ="text/javascript">
+function str_vowel()
+{
+	var str=prompt("Enter the string\n", " ");
+	for(var i = 0; i<str.length; i++)
+	{
+		if (str.charAt(i) =='a' || str.charAt(i) == 'e' || str.charAt(i) =='i'
+		|| str.charAt(i) == 'o' || str.charAt(i) == 'u' || str.charAt(i) == 'A' ||
+		str.charAt(i) == 'E' || str.charAt(i) =='I' || str.charAt(i) =='O' || str.charAt(i) == 'U')
+		{
+			document.write("The entered string is:" +str+ "<br/>");
+			document.write("The leftmost vowel is :"+str.charAt(i)+"<br/>");
+			var pos = i;
+			document.write("The position of the leftmost vowel " +str.charAt(i)+ " is:" +pos+"\n");
+			exit;
+		}
+	}
+	document.write("The entered string is:" +str+ "<br/>");
+	document.write("The entered string has no vowels");
+}
+</script>
+</head>
+<body style="background-color:green" onload = "str_vowel();"> <!-- Not recommended to use insline styeling -->
+</body>
+</html><br>

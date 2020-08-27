@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>q7</title>
+    <script>
+        var  str;
+        str = prompt("Enter the strig : ");
+        document.write("<h2> The entered string is "+str+" </h2>");
+        var l = str.length;
+        var la = str[l-1];
+        switch (la){
+            case 'y':
+            str = str.substring(0,l-1) + "ies";
+            break;
+            case 's':
+            str = str.substring(0,l-1) + "es";
+            break;
+            case 'h':
+            str = str.substring(0,l-1) + "es";
+            break;
+            default:
+            str = str + "s";
+        }
+        document.write("<h2> The plural is "+str+" </h2>");
+    </script> 
+</head>
+<body>
+    
+</body>
+</html>
