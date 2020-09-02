@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+    <style>
+        tr{
+            line-height: 2;
+        }
+        .required:after{
+            content: " *";
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Music school registration Form</h1>
+    <h2>Register for our music school from below</h2>
+    <hr>
+    <form action="">
+        <table>
+            <tr>
+            <td><label class="required" for="fname">First Name </label></td>
+            <td>
+            <input required type="text" name="fname" id ="fname" placeholder="First Name">
+            </td>
+            <td>
+            <label class="required" for="lname">Last Name </label>
+            </td>
+            <td>
+            <input required type="text" name="lname" id="lname" placeholder="Last Name">
+            </td>
+            </tr>
+            <tr>
+            <td><label class="required" for="Date">Birth Date </label></td>
+            <td colspan="3"><input required type="date" name="Date" id="Date"></td>
+            </tr>
+            <tr>
+            <td><label class="required" for="Choice">Choice of instrument </label></td>
+            <td colspan="3">
+            <select name="Choice" id="Choice">
+            <option value="Sitar">Sitar</option>
+            <option value="Guitar">Guitar</option>
+            <option value="Flute">Flute</option>
+            <option value="Drums">Drums</option>
+            </select>
+            </td>
+            </tr>
+            <tr>
+            <td style="position: relative;"><label class="required" for="Classes" style="position: absolute; top: 0px;">Pick Days for classes</label></td>
+            <td colspan="3">
+            <input required type="radio" value="Monday" name="Classes"> Monday <br>
+            <input required type="radio" value="Tuesday" name="Classes"> Tuesday <br>
+            <input required type="radio" value="Wednesday" name="Classes"> Wednesday <br>
+            <input required type="radio" value="Thursday" name="Classes"> Thursday <br>
+            <input required type="radio" value="Friday" name="Classes"> Friday <br>
+            <input required type="radio" value="Saturday" name="Classes"> Saturday <br>
+            <input required type="radio" value="Sunday" name="Classes"> Sunday <br>
+            </td>
+            </tr>
+            <tr>
+            <td><label class="required" for="">Start Date and Time</label></td>
+            <td><input required type="date" name="Start-Date" id="Start-Date"></td>
+            <td style="text-align: center;">at</td>
+            <td><input required type="time" name="Start-time" id="Start-time"></td>
+            </tr>
+            <tr>
+            <td style="position: relative;"><label style="position: absolute; top: 0px;" for="Comments">Comments </label></td>
+            <td colspan="3" style="padding-top: 8px;"><textarea name="Comments" id="Comments" cols="30" rows="10"></textarea></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

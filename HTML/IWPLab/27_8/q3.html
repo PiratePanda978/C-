@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+    <style>
+        body{
+            background-color: violet;
+        }
+        form{
+            width:600px;
+            line-height: 1;
+        }
+        label{
+            width: 200px;
+            display: inline-block;
+        }
+        input{
+            display: inline-block;
+        }
+        small{
+            color: red;
+        }
+        .form-control.error>small{
+            visibility: visible;
+        }
+        h1{
+            text-align: center;
+            color: rgb(97, 18, 97);
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="" id="form1">
+        <div class="form-control"><label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname"><small></small></div>
+        <br>
+        <div class="form-control"><label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname"><small></small></div>
+        <br>
+        <div class="form-control"><label for="date">Date of Birth:</label>
+        <input type="date" name="date" id="date"><small></small></div>
+        <br>
+        <div class="form-control"><label for="emailID">Email:</label>
+        <input type="email" name="emailID" id="emailID"><small></small></div>
+        <br>
+        <div class="form-control"><label for="Mobile">Mobile Number:</label>
+        <input type="text" name="Mobile" id="Mobile"><small></small></div>
+        <br>
+        <div class="form-control"><label for="Gender">Gender:</label>
+        <input type="radio" name="Gender" value="Male">Male
+        <input type="radio" name="Gender" value="Female">Female<small></small></div>
+        <br>
+        <div class="form-control"><label for="Address">Address:</label>
+        <textarea name="Address" id="Address" cols="30" rows="10"></textarea><small></small></div>
+        <br>
+        <div class="form-control"><label for="city">City:</label>
+        <input type="text" name="city" id="city"><small></small></div>
+        <br>
+        <div class="form-control"><label for="ZIP">PIN Code:</label>
+        <input type="number" name="ZIP" id="ZIP"><small></small></div>
+        <br>
+        <div class="form-control"><label for="state">State:</label>
+        <input type="text" name="state" id="state"><small></small></div>
+        <br>
+        <input type="submit">
+    </form>
+    <script src="2.js"></script>
+</body>
+</html>
