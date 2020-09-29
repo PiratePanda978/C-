@@ -1,0 +1,11 @@
+h1{
+    color:red;
+}
+.change{
+    color:red;
+    font-weight: bold;
+}
+.hover{
+    margin-top: 10px;
+    margin-bottom : 10px;
+}

@@ -4,10 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q1</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>haeading before dom</h1>
-    <input type="button">
+    <h1 id="heading">changing style and content of html using DOM manipulation.</h1>
+    <p id="Paragraph"></p>
+    <p id="paragraph1">
+        This is an implementation of changing the attribute of an html element using DOM manipulation.
+    </p> 
+    <div id="div1">
+
+    </div>
+    <input type="button" onclick="changeAll()" value="Change!">
+    <ul id="list">
+        <li id="item1">First element</li>
+        <li id="item2">Second element</li>
+        <li id="item3">Third Element : This element will be removed using dom</li>
+    </ul>
+    <input type="button" onclick="remove()" value="remove">
+    <div class="hover" onmouseover="mOver(this)" onmouseout="mOut(this)">
+        Before mouse hover.
+    </div>
+    <input type="text" onkeydown="whichKey(event)">
+    <p id="paragraph2">
+        
+    </p>
     <script src="1.js"></script>
 </body>
 </html>
