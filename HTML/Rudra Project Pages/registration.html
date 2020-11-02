@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration with Quizera</title>
+    <link rel="stylesheet" type="text/css" href="CSS/regstyle.css">
+</head>
+<body>
+	<div class="container">
+	    <div class="freshdesignweb-top">
+	        <span class="left">
+	            <a href="">
+	                <strong style="font-size: 20px; color: black;">Back to the Login Page</strong>
+	            </a>
+	        </span>
+			<header>
+				<h1 style="text-align: center;"><span style="font-size: 60px">Quizzera</span> <br>Welcome To The Registration Page</h1>
+	        </header>       
+            <div  class="form">
+       			<form id="contactform" method="POST"> 
+	  				<p class="contact">
+	   			  		<label for="fname">First Name</label>
+	   			  	</p> 
+	   				<input id="fname" placeholder="First Name" required tabindex="1" type="text">					
+					<p class="contact">
+	    		  		<label>Last Name</label>
+	    		  	</p> 
+	    			<input id="lname" placeholder="Last Name" tabindex="2" type="text">			
+					<p class="contact">
+	               		<label for="registration no">* Registration Number</label>
+	               	</p> 					
+	    			<input id="prn" placeholder="00XXX0000" required tabindex="3" type="text"> 
+					<p class="contact">
+						<label for="password">Create a password</label>
+					</p> 
+	   				<input type="password" id="password" required tabindex="4"> 
+	               	<p class="contact"><label>Confirm your password</label></p> 
+	   				<input type="password" id="repassword" required tabindex="5">
+              		<fieldset>
+						<label class="gender"> 
+                  			<select class="select-style" name="gender">
+				                <option  value="none">Gender</option>
+				                <option  value="m">Male</option>
+				                <option  value="f">Female</option>
+                  			</select>
+				 		</label>
+				 
+                  		<label class="age"> 
+			                <select class="select-style" >
+			             		<option> Age</option>
+				                <option  value="18">18</option>
+				                <option  value="19">19</option>
+				                <option  value="20">20</option>
+				                <option  value="21">21</option>
+				               	<option  value="22">22</option>
+				                <option  value="23">23</option>
+				                <option  value="24">24</option>
+	                 		</select>    
+                        </label>
+                 
+                
+	                  	<label class="year"> 
+	                  		<select class="select-style" >
+	             				<option  value="none">YEAR</option>
+	                  			<option  value="fe">FE</option>
+	                  			<option  value="se">SE</option>
+	                  			<option  value="te">TE</option>
+	                 		</select>
+						</label>
+						 
+		                <label class="dept"> 
+		                  	<select class="select-style">
+		                  		<option  value="none">DEPT</option>
+				                <option  value="cse">Computer</option>
+				                <option  value="it">IT</option>
+				                <option  value="me">Mechanical</option>
+				                <option  value="civil">Civil</option>
+				                <option  value="elec">Electrical</option>
+				                <option  value="entc">ENTC</option>
+				                <option  value="elex">Electronics</option>
+				                <option  value="instru">Instrumentation</option>
+				                <option  value="maths">Mathematics</option>          			  
+		                 	</select>
+		                </label>
+              		</fieldset>
+			  		<br>
+			  		<p>Note: Selecting a security question is important. If you ever forget your password
+			  		you can use this to retrieve your password.</p>
+			  		<br>
+			  		<label class="sec_quest"> 
+                  		<select class="select-style">
+                  			<option  value="none">Select a security question.....</option>
+                  			<option  value="s1">What is the name of your childhood hero?</option>
+                  			<option  value="s2">Whats was your childhood fantasy?</option>
+                  			<option  value="s3">Whats is your favourite cartoon?</option>
+               			</select>
+               		</label>
+				 	<p class="contact"><label>Answer</label></p>
+					<input id="sec_ans" placeholder="Enter here..." required type="text">
+					<br><br>
+            		<p class="contact"><label>Email-ID</label></p> 
+            		<input id="email" placeholder="someone@example.com" required type="email"> <br>
+
+            		<p class="contact"><label>Mobile phone</label></p> 
+            		<input id="phone" placeholder="phone number" required type="text"> <br>
+            		<input class="button" id="submit" tabindex="5" value="Sign me up!" type="submit"> 	 
+   				</form> 
+			</div> 
+		</div>     
+	</div>
+</body>
+</html>
